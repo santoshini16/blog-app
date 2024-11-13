@@ -1,0 +1,101 @@
+.edit-blog {
+    background: url("./test4.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .edit-blog h2 {
+    font-size: 2.5rem;
+    color: #fff; /* Light color text for better visibility */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .edit-blog form {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Dark gradient background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Softer, more subtle shadow */
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  input,
+  textarea {
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #0072ff; /* Focus color to highlight inputs */
+  }
+  
+  input[type="text"] {
+    height: 50px;
+  }
+  
+  textarea {
+    height: 220px;
+    resize: none;
+  }
+  
+  button {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 14px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 25px;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  textarea {
+    line-height: 1.6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .edit-blog h2 {
+      font-size: 2rem;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 90%;
+      padding: 30px;
+    }
+  }
+  
