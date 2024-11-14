@@ -6,7 +6,7 @@ import Forgot from './authFolder/Forgot'
 import Reset from './authFolder/Reset'
 import Verify from './authFolder/verify'
 import Home from './homeFolder/Home'
-import Create from './blogFolder/Create'
+
 import NotVerified from './authFolder/NotVerified'
 import HomeBlog from './blogFolder/homeBlog/homeBlog'
 import CreateBlog from './blogFolder/createblog/CreateBlog'
@@ -22,7 +22,6 @@ function App() {
       <Route path='/forgot-password' element={<Forgot/>}></Route>
       <Route path='/reset-password/:token' element={<Reset/>}></Route>
       <Route path='/verify/:token' element={<Verify/>}></Route>
-      <Route path='/create-blog/:id' element={<Create/>}></Route>
       <Route path='/not-verified' element={<NotVerified/>}></Route>
       <Route path='/home' element={<HomeBlog/>}></Route>
       <Route path='/create-blog' element={<CreateBlog />} />
