@@ -11,7 +11,7 @@ const ReadBlog = () => {
 
   useEffect(() => {
     // Fetch the specific blog post by ID
-    axios.get(`http://localhost:5000/blog/read/${id}`)
+    axios.get(`https://blog-app-2-f51u.onrender.com/blog/read/${id}`)
       .then((res) => {
         if (res.data && res.data.blog) {
           setBlog(res.data.blog);

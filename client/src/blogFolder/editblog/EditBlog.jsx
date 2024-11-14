@@ -10,7 +10,7 @@ const EditBlog = () => {
   const [blog, setBlog] = useState({ title: '', content: '', image: '', author: '' });
   const navigate = useNavigate(); 
   useEffect(() => {
-    axios.get(`http://localhost:5000/blog/${id}`).then(res => setBlog(res.data.blog));
+    axios.get(`https://blog-app-2-f51u.onrender.com/blog/${id}`).then(res => setBlog(res.data.blog));
   }, [id]);
 
   const handleChange = (e) => {
@@ -20,7 +20,7 @@ const EditBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/blog/update/${id}`, blog);
+      await axios.put(`https://blog-app-2-f51u.onrender.com/blog/update/${id}`, blog);
       toast.success("Blog updated successfully");
       setTimeout(() => {
         navigate("/home");

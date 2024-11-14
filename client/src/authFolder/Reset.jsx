@@ -17,7 +17,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/auth/reset/${token}`,
+        `https://blog-app-2-f51u.onrender.com/auth/reset/${token}`,
         {
           password,
           confirmedPassword,

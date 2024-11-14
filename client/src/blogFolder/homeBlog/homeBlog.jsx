@@ -7,7 +7,7 @@ const HomeBlog = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/blog')
+    axios.get('https://blog-app-2-f51u.onrender.com/blog')
       .then((res) => {
         if (res.data && res.data.blogs) {
           setBlogs(res.data.blogs);
@@ -20,7 +20,7 @@ const HomeBlog = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/blog/delete/${id}`);
+      await axios.delete(`https://blog-app-2-f51u.onrender.com/blog/delete/${id}`);
       setBlogs((prevBlogs) => prevBlogs.filter(blog => blog._id !== id));
     } catch (error) {
       console.error("Failed to delete blog:", error);

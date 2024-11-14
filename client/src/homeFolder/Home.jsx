@@ -8,7 +8,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    axios.get('http://localhost:5000/blog')
+    axios.get('https://blog-app-2-f51u.onrender.com/blog')
       .then((res) => {
         if (res.data && res.data.blogs) {
           setBlogs(res.data.blogs);

@@ -12,7 +12,7 @@ const VerifyAccount = () => {
   useEffect(() => {
     const verifyToken = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/auth/verify/${token}`);
+        const response = await axios.get(`https://blog-app-2-f51u.onrender.com/auth/verify/${token}`);
         console.log(token)
         if (response.data.message === "Invalid Token") {
           setVerificationStatus('Invalid Token');

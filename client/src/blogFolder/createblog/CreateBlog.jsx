@@ -16,7 +16,7 @@ const CreateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/blog/create', { title, image, content, author });
+      await axios.post('https://blog-app-2-f51u.onrender.com/blog/create', { title, image, content, author });
       toast.success("Blog created successfully");
       setTimeout(() => {
         navigate("/home");

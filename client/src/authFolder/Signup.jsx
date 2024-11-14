@@ -20,7 +20,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/auth/register", {
+      const response = await axios.post("https://blog-app-2-f51u.onrender.com/auth/register", {
         email,
         password,
         confirmedPassword,
