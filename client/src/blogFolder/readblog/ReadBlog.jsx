@@ -28,6 +28,7 @@ const ReadBlog = () => {
     <div className="read-blog">
       <div className="blog-container">
         <h1>{blog.title}</h1>
+        <p style={{marginBottom:"10px",color:"white"}}>Author:{blog.author}</p>
         <img src={blog.image} alt={blog.title} className="blog-image" />
         <p className="blog-content">{blog.content}</p>
         <div className="back-button">
